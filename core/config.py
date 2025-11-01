@@ -8,6 +8,9 @@ class Settings(BaseSettings):
 
     SHEET_ID_PHAT_NGUOI: str = Field("_",description="Shet id")
 
+    DISCORD_BOT_TOKEN: str = Field("se@cret0", description="Discord bot token")
+    DISCORD_CHANNEL_PHAT_NGUOI: str = Field("", description="Discord channel phat nguoi")
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
