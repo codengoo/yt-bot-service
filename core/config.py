@@ -1,7 +1,5 @@
 from functools import lru_cache
-from pydantic import Field
-from pydantic.v1 import BaseSettings
-
+from pydantic.v1 import BaseSettings,Field
 
 class Settings(BaseSettings):
     API_KEY: str = Field("se@cret0", description="Secret api key for calling service from outside")
