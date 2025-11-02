@@ -86,6 +86,7 @@ def extract_violations(raw_violations: str) -> List[TrafficViolation]:
 
 def send_violations(violations: List[TrafficViolation]):
     for violation in violations:
+        if violation.status != "Chưa xử phạt": continue
         test_embed = {
             "title": f"🌸 Phát hiện vi phạm - {violation.license_plate}",
             "color": 15277667,
