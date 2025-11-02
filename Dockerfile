@@ -1,5 +1,5 @@
 # Sử dụng image Python nhẹ
-FROM python:3.14-slim
+FROM python:3.13-slim
 
 # Đặt biến môi trường để tránh tạo file .pyc và đảm bảo stdout/stderr được ghi ngay lập tức
 ENV PYTHONDONTWRITEBYTECODE=1
